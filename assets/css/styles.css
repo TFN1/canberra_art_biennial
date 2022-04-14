@@ -64,13 +64,17 @@ p {
     color: #DCDCDC;
 }
 
+.alternate {
+    color: white;
+}
+
 .nav_bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 15vh;
     align-items: center;
-    padding: 0 3em;
+    padding: 0 1em 0 3em;
 }
 
 .nav_logo {
@@ -109,7 +113,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50vh 0 0 0;
+    margin: 30vh 0 0 0;
 }
 
 .title h1 {
@@ -390,4 +394,91 @@ p {
 .footer_bottom a:hover {
     color: #404040;
     text-decoration: underline;
+}
+
+.contour_returns_contain {
+    height: 170vh;
+    margin: 40vh 0 0 0;
+}
+
+.contour_returns_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contour_returns_top_text {
+    width: 60%;
+}
+
+.contour_returns_bottom {
+    margin: 15vh 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.contour_returns_left {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contour_returns_left_img {
+    height: 90vh;
+}
+
+.contour_returns_left_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.contour_returns_left_text {
+    width: 75%;
+    margin: 15vh 0 0 0;
+    align-self: flex-end;
+}
+
+.contour_returns_right {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contour_returns_right_img {
+    height: 90vh;
+}
+
+.contour_returns_right_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.contour_returns_right_text {
+    width: 40%;
+    margin: 0 0 15vh 0;
+}
+
+.artists_responding {
+    height: 135vh;
+    margin: 30vh 0 0 0;
+    padding: 0 4em;
+}
+
+.artists_responding h2 {
+    line-height: 100%;
+}
+
+.available_later {
+    margin: 20vh 0 0 0;
+    padding: 0em 4em;
+}
+
+.black_background {
+    background-color: black;
 }
