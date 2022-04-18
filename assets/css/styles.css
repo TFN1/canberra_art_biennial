@@ -8,11 +8,19 @@ body {
 }
 
 section {
-    padding: 0 4em 0 4em;
+    padding: 0 4em;
 }
 
 .no_padding {
     padding: 0px 0px 0px 0px;
+}
+
+#dropdownlinks {
+    display: none;
+}
+
+.dropdownmenu {
+    display: none;
 }
 
 h1 {
@@ -27,16 +35,18 @@ h2 {
 
 h3 {
     font-size: 3.8em;
-    line-height: 80%;
+    line-height: 100%;
 }
 
 h4 {
-    font-size: 1.3em;
-    line-height: 80%;
+    font-size: 1.4em;
+    line-height: 100%;
 }
+
 
 p {
     color: #404040;
+    font-size: 1.2em;
 }
 
 .button {
@@ -48,6 +58,7 @@ p {
     border: 1px solid #404040;
     padding: 0.6em 1.8em;
     display: inline-block;
+    text-align: center;
 }
 
 .alternate_button {
@@ -58,6 +69,7 @@ p {
     border: 1px solid #DCDCDC;
     padding: 0.6em 1.8em;
     display: inline-block;
+    text-align: center;
 }
 
 .alternate_button p {
@@ -132,7 +144,7 @@ p {
 
 .alternate_title h1 {
     overflow-wrap: break-word;
-    font-size: 10em;
+    font-size: 9.7em;
 }
 
 .whats_on {
@@ -184,16 +196,28 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
 }
 
 .intro_h {
-   width: 65%;
+   width: 46%;
 }
 
 .intro_p {
-    width: 30%;
-    display: flex;
+    width: 40%;
+}
+
+.intro_img {
+    width: 50%;
+    height: 70vh;
+}
+
+.intro_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 .intro_p p {
@@ -439,6 +463,10 @@ p {
     height: 90vh;
 }
 
+.contour_returns_left_img p {
+    font-size: 0.8em;
+}
+
 .contour_returns_left_img img {
     width: 100%;
     height: 100%;
@@ -462,6 +490,10 @@ p {
     height: 90vh;
 }
 
+.contour_returns_right_img p {
+    font-size: 0.8em;
+}
+
 .contour_returns_right_img img {
     width: 100%;
     height: 100%;
@@ -470,21 +502,43 @@ p {
 }
 
 .contour_returns_right_text {
-    width: 40%;
+    width: 60%;
     margin: 0 0 15vh 0;
 }
 
 .artists_responding {
     margin: 30vh 0 0 0;
     padding: 0 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.artists_responding h2 {
-    line-height: 100%;
+.artists_left {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artists_left h4 {
+    line-height: 130%;
+}
+
+.artists_right {
+    width: 46%;
+    height: 60vh;
+}
+
+.artists_right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .available_later {
-    margin: 20vh 0 0 0;
+    margin: 40vh 0 0 0;
     padding: 0em 4em;
 }
 
@@ -492,8 +546,8 @@ p {
     background-color: black;
 }
 
-.city_commissions_image {
-    margin: 20vh 0 0 0;
+.centre_image {
+    margin: 25vh 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -563,7 +617,7 @@ p {
 }
 
 .year_right_mid_text h4 {
-    line-height: 90%;
+    line-height: 110%;
 }
 
 .year_image_gallery {
@@ -597,7 +651,6 @@ p {
     overflow: hidden;
 }
 
-
 .year_right_bottom {
     width: 80%;
     margin: 16vh 0 0 0;
@@ -625,6 +678,10 @@ p {
     width: 55%;
     height: 70vh;
 }
+
+.profile_left p {
+    font-size: 1em;
+}
  
  .profile_right img {
      width: 100%;
@@ -636,6 +693,30 @@ p {
  .extra_margin {
      margin: 0 0 40vh 0;
  }
+
+ .donate_intro_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 35vh 0 0 0;
+}
+
+.donate_intro_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.donate_intro_h {
+   width: 48%;
+}
+
+.donate_intro_p {
+    width: 45%;
+}
 
  .form {
      margin: 20vh 0 0 0;
@@ -684,3 +765,954 @@ input[type=number] {
     display: inline-block;
     margin: 3em 0 0 0;
  }
+
+ @media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 10em;
+        line-height: 80%;
+    }
+
+    #dropdownlinks {
+        display: none;
+    }
+    
+    .dropdownmenu {
+        display: none;
+    }
+
+    .alternate_title h1 {
+        overflow-wrap: break-word;
+        font-size: 9em;
+    }
+    
+    h2 {
+        font-size: 4.2em;
+        line-height: 80%;
+    }
+    
+    h3 {
+        font-size: 3.4em;
+        line-height: 100%;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        line-height: 100%;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .profile_left p {
+        font-size: 0.8em;
+    }
+
+    .donate_intro_h {
+        width: 48%;
+    }
+
+    .nav_links a {
+        color: black;
+        text-decoration: none;
+        margin: 0em 1em;
+        font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .nav_bar {
+        height: 15vh;
+        align-items: center;
+        padding: 0 1em 0 3em;
+    }
+        
+    .nav_links a {
+        color: black;
+        text-decoration: none;
+        margin: 0em 1.3em;
+        font-size: 1em;
+    }
+
+    #dropdownlinks {
+        display: none;
+    }
+    
+    .dropdownmenu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 8em;
+    }
+
+    h2 {
+        font-size: 3.8em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .centre_image {
+        margin: 20vh 0 0 0;
+    }
+
+    .alternate_title h1 {
+        font-size: 7em;
+    }
+
+    .available_later {
+        margin: 20vh 0 0 0;
+    }
+
+    .donate {
+        margin: 20vh 0 0 0;
+    }
+
+    .explore_previous_years {
+        margin: 15vh 0;
+    }
+
+    .find_out_more {
+        margin: 10vh 0 0 0;
+    }
+
+    .intro_text {
+        margin: 20vh 0 0 0;
+    }
+
+    .donate_intro_h {
+        width: 55%;
+    }
+
+    .donate_intro_p {
+        width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+      .nav_links {
+          display: none;
+    }
+
+    .nav_bar {
+        height: 15vh;
+        align-items: center;
+        padding: 0 3em;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 3px 0;
+    }
+
+    #dropdownlinks {
+        display: none;
+        flex-direction: column;
+    }
+
+    .dropdownmenu {
+        display: block;
+    }
+
+    #dropdownlinks a {
+        width: 100%;
+        padding: 1.4em 2em;
+        text-decoration: none;
+        color: black;
+        background-color: rgb(246, 246, 246);
+    }
+
+    h1 {
+        font-size: 6.8em;
+    }
+
+    .on_going_projects {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin: 25vh 0vh 0vh 0vh;
+    }
+    
+    .on_going_projects_left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px;
+    }
+    
+    .on_going_projects_left img {
+        margin: 10vh 0 0 0;
+        width: 50vw;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .on_going_projects_mid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 6em 4em 2em 4em;
+    }
+    
+    .on_going_projects_right {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 4em 3em 4em;
+        color: #DCDCDC;
+    }
+    
+    .on_going_projects_right h4 {
+        line-height: 100%;
+        margin: 0 0 2em 0;
+    }
+
+    .explore_previous_years {
+        display: flex;
+        flex-direction: column;
+        margin: 20vh 0vh 10vh 0;
+        height: auto;
+    }
+    
+    .explore_previous_years_left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 3em 3em 0;
+    }
+    
+    .explore_previous_years_lowertext h4 {
+        margin: 1em 0 1.5em 0;
+        width: 100%;
+    }
+    
+    .explore_previous_years_right {
+        display: none;
+    }
+    
+    .find_out_more {
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 0vh 20vh 0;
+        height: auto;
+    }
+    
+    .find_out_more_left {
+        display: none;
+    }
+    
+    .find_out_more_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .find_out_more_right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 3em 3em 0;
+    }
+    
+    .find_out_more_lowertext h4 {
+        margin: 1em 0 1.5em 0;
+        width: 100%;
+    }
+
+    .donate {
+        padding: 10vh 0;
+    }
+
+    .alternate_title h1 {
+        font-size: 6em;
+    }
+
+    .city_commissions_top {
+        width: 100%;
+    }
+
+    .intro_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        margin: 15vh 0 0 0;
+        justify-content: space-between;
+    }
+    
+    .profile_left {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .profile_left h2 {
+        margin: 0.2em 0 0 0;
+    }
+    
+    .profile_right {
+        width: 55%;
+        height: 70vh;
+    }
+    
+    .profile_left p {
+        font-size: 1em;
+    }
+     
+     .profile_right img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         overflow: hidden;
+     }
+
+     .long_text {
+         display: none;
+     }
+
+     .donate_intro_h h2 {
+         font-size: 3.2em;
+     }
+     
+     .form_right h2 {
+         line-height: 96%;
+     }
+
+     .form_left {
+         width: 45%;
+     }
+
+     .form_right {
+         width: 45%;
+     }
+  }
+  @media only screen and (max-width: 708px) {
+    h1 {
+        font-size: 6em;
+    }
+    
+    h2 {
+        overflow-wrap: break-word;
+        font-size: 2.8em;
+    }
+    
+    h3 {
+        font-size: 2.6em;
+    }
+    
+    .art_matters_contain {
+        margin: 30vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .art_matters_left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .art_matters_left_img {
+        height: 90vh;
+    }
+    
+    .art_matters_left_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .art_matters_left_text {
+        width: 100%;
+        margin: 0 0 10em 0;
+        align-self: flex-end;
+    }
+    
+    .art_matters_right {
+        width: 100%;
+    }
+    
+    .art_matters_right_img {
+        height: 90vh;
+    }
+    
+    .art_matters_right_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .art_matters_right_text {
+        margin: 4em 4em 0 4em;
+        color: #404040;
+    }
+
+    .art_matters_right_text p {
+        overflow-wrap: break-word;
+    }
+
+    .intro_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 35vh 0 0 0;
+    }
+    
+    .intro_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .intro_h {
+       width: 100%;
+    }
+    
+    .intro_p {
+        width: 100%;
+    }
+    
+    .intro_img {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .intro_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    
+    .intro_p p {
+        align-self: flex-end;
+        margin: 2em 0 0 0;
+    }
+
+    .artists_responding {
+        margin: 30vh 0 0 0;
+        padding: 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .alternate_title h1 {
+        font-size: 5em;
+    }
+
+    .city_commissions_container {
+        padding: 0 4em;
+        margin: 30vh 0 0 0;
+    }
+
+    .donate_intro_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .donate_intro_h {
+        width: 100%;
+    }
+
+    .donate_intro_p {
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+  }
+
+  @media only screen and (max-width: 588px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    .intro_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20vh 0 0 0;
+    }
+    
+    .donate {
+        margin: 10vh 0 0 0;
+    }
+
+    .find_out_more {
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 0vh 10vh 0;
+        height: auto;
+    }
+
+    .donate_right h4 {
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+
+    .alternate_title h1 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .year_left {
+        display: none;
+    }
+
+    .year_right {
+        width: 100%;
+    }
+
+    .find_out_more_right {
+        padding: 0 3em 0 0;
+    }
+
+    .donate_right {
+        width: 50%;
+        padding: 0em 4em 0 0;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin: 15vh 0 0 0;
+        justify-content: space-between;
+    }
+
+    .profile_left {
+        width: 100%;
+    }
+
+    .profile_right {
+        width: 100%;
+        height: 40vh;
+        margin: 2em 0 0 0;
+    }
+
+    .whats_on {
+        margin: 20vh 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    h1 {
+        font-size: 3.4em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 0 2em;
+    }
+    
+    .title {
+        margin: 15vh 0 0 0;
+    }
+
+    .whats_on_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 2em 0;
+    }
+
+    .whats_on_left {
+        width: 100%;
+    }
+
+    .whats_on_right {
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+
+    .whats_on_right h4 {
+        margin: 0 0 2em 0;
+    }
+
+    .art_matters_contain {
+        margin: 15vh 0 0 0;
+    }
+
+    .art_matters_left_text {
+        margin: 0 0 10vh 0;
+    }
+
+    .centre_image {
+        margin: 10vh 0 0 0;
+    }
+
+    .intro_img {
+        width: 100%;
+        height: auto;
+        margin: 3em 0 0 0;
+    }
+
+    .on_going_projects {
+        margin: 10vh 0vh 0vh 0vh;
+    }
+
+    .donate {
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 0 0 0;
+        padding: 3em;
+    }
+
+    .donate_left {
+        width: 100%;
+        padding: 0em 2em 2em 2em;
+    }
+
+    .donate_right {
+        width: 100%;
+        padding: 0em 0em 0 0;
+    }
+
+    .footer {
+        margin: 10vh 0;
+    }
+
+    .footer_bottom a {
+        font-size: 0.7em;
+    }
+
+    .explore_previous_years {
+        margin: 10vh 0vh 10vh 0;
+    }
+
+    .contour_returns_contain {
+        margin: 20vh 0 0 0;
+    }
+
+    .contour_returns_bottom {
+        margin: 10vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contour_returns_left {
+        width: 100%;
+    }
+
+    .contour_returns_left_img {
+        height: 60vh;
+    }
+
+    .contour_returns_left_text {
+        margin: 15vh 0 0 0;
+    }
+
+    .contour_returns_left_text {
+        overflow-wrap: break-word;
+        width: auto;
+        padding: 0 2em;
+    }
+
+    .contour_returns_right_text {
+        width: auto;
+        margin: 3em 0 15vh 0;
+        padding: 0 2em;
+    }
+
+    .contour_returns_right {
+        width: 100%;
+    }
+
+    .contour_returns_right_img {
+        height: 60vh;
+    }
+
+    .artists_responding {
+        margin: 15vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .artists_left {
+        width: 100%;
+    }
+
+    .artists_right {
+        width: auto;
+        height: 60vh;
+        margin: 10vh 0 0 0;
+    }
+
+    .available_later {
+        margin: 10vh 0 0 0;
+    }
+
+    .alternate_title {
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10vh 0 0 0;
+        margin: 10vh 0 0 0;
+    }
+
+    .alternate_title h1 {
+        font-size: 3em;
+    }
+
+    .nav_logo {
+        height: 4vh;
+    }
+
+    .nav_bar {
+        height: 12vh;
+        align-items: center;
+        padding: 0 2em 0 2em;
+    }
+
+    .city_commissions_container {
+        padding: 0 4em;
+        margin: 15vh 0 0 0;
+    }
+
+    .city_commissions_bottom {
+        margin: 15vh 0 0 0;
+        width: 100%;
+    }
+
+    .explore_previous_years {
+        margin: 15vh 0vh 10vh 0;
+    }
+
+    .year_section {
+        margin: 15vh 0 0 0;
+    }
+
+    .extra_margin {
+        margin: 0 0 15vh 0;
+    }
+
+    .donate_intro_h h2 {
+        font-size: 2.8em;
+    }
+
+    .form {
+        margin: 10vh 0 20vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form_right {
+        width: 100%;
+    }
+
+    .form_left {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        margin: 1em 0 0 0;
+    }
+
+    .form_right h2 {
+        line-height: 96%;
+        margin: 1em 0 0 0;
+    }
+
+    .donate_intro_text {
+        margin: 15vh 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    .button {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .whats_on_bottom {
+        height: 40vh;
+    }
+
+    .art_matters_left_img {
+        height: 40vh;
+    }
+
+    .art_matters_right_img {
+        height: 40vh;
+    }
+
+    .art_matters_right_text {
+        margin: 4em 2em 0 2em;
+        color: #404040;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .on_going_projects_mid {
+        width: auto;
+        padding: 6em 2em 2em 2em;
+    }
+
+    .on_going_projects_right {
+        width: auto;
+        padding: 0 2em 3em 2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .footer_bottom {
+        padding: 6vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .footer_bottom a {
+        margin: 0.6em 0;
+    }
+
+    .footer_top {
+        border-bottom: 1px solid #404040;
+        padding: 0 0 6vh 0;
+    }
+
+    .footer {
+        margin: 3em 0;
+    }
+
+    .contour_returns_left_img {
+        height: 40vh;
+    }
+
+    .available_later {
+        margin: 10vh 0 0 0;
+        padding: 0em 2em;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .footer_top h3 {
+        font-size: 1.4em;
+    }
+
+    .alternate_title h1 {
+        font-size: 2.4em;
+    }
+
+    .centre_image img {
+        height: 40vh;
+    }
+
+    .city_commissions_container {
+        padding: 0 2em;
+        margin: 10vh 0 0 0;
+    }
+
+    .city_commissions_bottom p {
+        font-size: 0.8em;
+    }
+
+    .gallery_column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 0;
+    }
+
+    .year_right_bottom {
+        width: 100%;
+        margin: 16vh 0 0 0;
+    }
+
+    .year_right_mid_text {
+        width: 100%;
+        margin: 16vh 0 0 0;
+    }
+
+    .intro_h h3 {
+        font-size: 1em;
+    }
+
+    .intro_p p {
+        font-size: 0.8em;
+    }
+
+    .donate_intro_h h2 {
+        font-size: 2.2em;
+    }
+
+}
